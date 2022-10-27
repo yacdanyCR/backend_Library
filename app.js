@@ -1,9 +1,8 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const { getBook } = require('./controllers/bookController.js');
+const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('GET request to the homepage')
-});
+app.get('/api/books', getBook)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
