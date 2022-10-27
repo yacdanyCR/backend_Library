@@ -1,6 +1,5 @@
 const getConection = require("../db/db.js");
 
-
 const addBook = async (req, res) => {
     try {
         console.log(req.body)
