@@ -1,8 +1,9 @@
 const express = require('express');
+const config = require('../config');
 const bookRouter = require('../router/bookRouter.js');
 const userRouter = require('../router/userRouter.js');
 const app = express();
-const port = 3000;
+const port = config.port;
 
 app.use(express.json());
 app.use('/api/book', bookRouter);
