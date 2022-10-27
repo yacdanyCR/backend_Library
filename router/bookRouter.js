@@ -4,7 +4,7 @@ const bookRouter = express.Router();
 
 bookRouter.get('/',getBook);
 bookRouter.get('/:id',getBookId);
-bookRouter.delete('/delete/:id',deleteBook);
+bookRouter.delete('/:id',deleteBook);
 bookRouter.post('/',addBook);
 
 module.exports = bookRouter;
