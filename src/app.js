@@ -1,6 +1,6 @@
 const express = require('express');
-const bookRouter = require('./router/bookRouter.js');
-const userRouter = require('./router/userRouter.js');
+const bookRouter = require('../router/bookRouter.js');
+const userRouter = require('../router/userRouter.js');
 const app = express();
 const port = 3000;
 
